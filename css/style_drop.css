@@ -6,6 +6,18 @@ ul{
 	list-style: none;
 	text-decoration: none;
 }
+@font-face {
+font-family: muli_regular;
+src: url(../fonts/Muli-Regular.ttf);
+}
+@font-face {
+font-family: muli_semibold;
+src: url(../fonts/Muli-SemiBold.ttf);
+}
+@font-face {
+font-family: muli_bold;
+src: url(../fonts/Muli-Bold.ttf);
+}
 .container{
 	width: 100%;
 	min-height: 100vh;
@@ -46,7 +58,7 @@ ul{
 .op{
 	margin-left: 15px;
 	margin-right: 15px;
-	font-family: Arial;
+	font-family: muli_semibold;
 	font-size: 20px;
 	line-height: 70px;
 }
@@ -70,7 +82,7 @@ li.op:hover{
 	justify-content: flex-end;
 	width: 300px;
 	color: #fff;
-	font-family: Arial;
+	font-family: muli_semibold;
 	font-size: 20px;
 }
 .formulario{
@@ -114,7 +126,7 @@ li.op:hover{
 }
 .btn_entrar{
 	width: 150px;
-	font-family: arial;
+	font-family: muli_semibold;
 	font-size: 16px;
 	padding: 5px;
 	justify-content: flex-start;
@@ -125,6 +137,10 @@ li.op:hover{
 	width: 100%;
 	justify-content: flex-end;
 }
+.menu a{
+	color: #fff;
+	text-decoration: none;
+}
 .menumobile_int{
 	display: flex;
 	justify-content: flex-end;
@@ -134,7 +150,7 @@ li.op:hover{
 	display: flex;
 	justify-content: flex-end;
 	color: #fff;
-	font-family: Arial;
+	font-family: muli_semibold;
 	font-size: 20px;
 	width: 50px;
 	line-height: 70px;
@@ -172,7 +188,7 @@ li.li_mobile:hover{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height:50vh;
+	min-height:100vh;
 	width: 100%;
 	padding-top: 30px;
 	background-color: #e8f7fe;
@@ -197,7 +213,7 @@ li.li_mobile:hover{
 	flex-direction: row;
 	align-items: center;
 	background-color: ;
-	font-family: Arial;
+	font-family: muli_bold;
 	font-size: 35px;
 	line-height: 45px;
 	margin-bottom: 30px;
@@ -207,7 +223,7 @@ li.li_mobile:hover{
 	flex-direction: row;
 	align-items: center;
 	background-color: ;
-	font-family: Arial;
+	font-family: muli_bold;
 	font-size: 35px;
 	line-height: 45px;
 	margin-bottom: 30px;	
@@ -216,16 +232,17 @@ li.li_mobile:hover{
 	background-color: ;
 	width: 90%;
 	text-align: justify;
-	font-family: Arial;
+	font-family: muli_regular;
 	font-size: 20px;
 	line-height: 35px;
+	margin-bottom: 25px;
 }
 .sabonetes_titulo, .sais_titulo{
 	display: flex;
 	justify-content: flex-start;
 	width: 90%;
 	font-size: 20pt;
-	font-family: Arial;
+	font-family: muli_semibold;
 	padding-bottom: 15px;
 }
 .sabonetes_produtos, .sais_produtos{
@@ -254,7 +271,7 @@ li.li_mobile:hover{
 }
 .descricao_sabonete, .descricao_sais{
 	font-size: 16pt;
-	font-family: Arial;
+	font-family: muli_regular;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	text-align: center;
@@ -265,7 +282,7 @@ li.li_mobile:hover{
 	width: 100%;
 	justify-content: space-around;
 	font-size: 16pt;
-	font-family: Arial;
+	font-family: muli_regular;
 }
 .telefones, .email{
 	display: flex;
@@ -324,8 +341,6 @@ li.li_mobile:hover{
 	width: 120px; 
 	background-color: #191919;
 }
-}
-@media only screen and (max-width: 375px){
 .titulo_sobre{
 	font-size: 16pt;
 }
